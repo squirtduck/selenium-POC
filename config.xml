@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <parameters>
+	<parameter name="PAGELOAD_TIME" value="10" />
+	<!--<parameter name="CHROME_PATH" value="C:\\Users\\marqu\\workspace\\SeleniumPOC\\drivers\\chromedriver.exe" />
+    <parameter name="IE_PATH" value="C:\\Users\\marqu\\workspace\\SeleniumPOC\\drivers\\MicrosoftWebDriver.exe" />-->
+    <parameter name="CHROME_PATH" value="\\drivers\\chromedriver.exe" />
+    <parameter name="IE_PATH" value="\\drivers\\MicrosoftWebDriver.exe" />
+    <parameter name="FF_PATH" value="C:\\geckodriver.exe" />
+    <parameter name="FILEINVITE_LOGIN_URL" value="https://app.fileinvite.com" />
+    <!--<parameter name="FILEINVITE_LOGIN" value="geminiternary@gmail.com" />
+    <parameter name="FILEINVITE_PASSWORD" value="HCPB2016" />-->
+    <parameter name="FILEINVITE_LOGIN" value="happycowphotobooths@gmail.com" />
+    <parameter name="FILEINVITE_PASSWORD" value="HCPB2016" />
+    <parameter name="FILEINVITE_NEWINVITE_DATE" value="2020-11-18" />
+    <parameter name="FILEINVITE_NEWINVITE_RECIPIENT" value="sample@fileinvite.com" />
+    <parameter name="FILEINVITE_NEWINVITE_SUBJECT" value="Test Invite" />
+    <parameter name="FILEINVITE_NEWREQUEST_SUBJECT" value="Test Request" />
+	<parameter name="FILEINVITE_NEWINVITE_MESSAGE_STATUS" value="Sent" />
+	<parameter name="FILEINVITE_LOGO_LOCALPATH" value="C:\Users\marqu\workspace\POCSeleniumFramework\library\files\fileInvite_logo.png" />
+	<parameter name="FILEINVITE_LOGO_URL" value="https://app.fileinvite.com/img/logo.png" /> 
+	<!-- <parameter name="SCREENSHOT_DIRECTORY_PATH" value="C:\Users\marqu\workspace\POCSeleniumFramework\screenshots\" />-->
+	<parameter name="SCREENSHOT_DIRECTORY_PATH" value="\screenshots\" />
+  </parameters>
+  <xpaths>
+  	<xpath name="FILEINVITE_LOGIN_NAME_FIELD" value="//input[@name='email']" /> 
+  	<xpath name="FILEINVITE_PASSWORD_FIELD" value="//input[@name='password']" />
+  	<xpath name="FILEINVITE_USERNAME_DROPDOWN" value="//span[@class='user-nav-address']" />
+  	<xpath name="FILEINVITE_NEWINVITE_DROPDOWN" value="//*[@class='header-quick-nav']//*[@class='fa fa-chevron-down']" />
+  	<xpath name="FILEINVITE_NEWINVITE_ORIGIN_SELECTION" value="//*[@class='header-quick-nav']//*[text()='Send as Me']" />
+  	<xpath name="FILEINVITE_NEWINVITE_RECIPIENT_FIELD" value="//input[@id='persons']" />
+  	<!--<xpath name="FILEINVITE_NEWINVITE_RECIPIENT_FIELD" value="//input[@class='form-control tt-hint']" />--> 
+  	<!--<xpath name="FILEINVITE_NEWINVITE_RECIPIENT_SAMPLE_CONTACT_FIELD" value="//*[contains(text(), 'Sample Contact')]" />-->
+  	<xpath name="FILEINVITE_NEWINVITE_RECIPIENT_SAMPLE_CONTACT_FIELD" value="//*[contains(text(), 'Sample Contact (sample@fileinvite.com)')]" />
+  	<xpath name="FILEINVITE_NEWINVITE_CALENDAR_FIELD" value="//input[@id='due_date']" />
+  	<xpath name="FILEINVITE_NEWREQUEST_BUTTON" value="//*[@class='dragdrop ']//*[contains(@class, 'add-request-btn')]" />
+  	<xpath name="FILEINVITE_NEWINVITE_TITLE_FIELD" value="//input[@id='name']" />
+  	<xpath name="FILEINVITE_NEWREQUEST_TITLE_FIELD" value="//input[@name='title']" />
+  	<xpath name="FILEINVITE_NEWREQUEST_SAVE_BUTTON" value="//form[@id='request-form']//*[text()='Save']" />
+	<xpath name="FILEINVITE_NEWINVITE_COMPLETE_BUTTON" value="//*[@id='review-btn-div']//*[contains(@class,'next-btn')]" />
+	<xpath name="FILEINVITE_NEWINVITE_SEND_BUTTON" value="//*[@id='send-invite-btn-wrap']//*[contains(@class, 'next-btn')]" />
+	<xpath name="FILEINVITE_DASHBOARD_LINK" value="//*[@id='dashboard_path']//span" />
+	<xpath name="FILEINVITE_NEWINVITE_MESSAGE_STATUS_LOCATION" value="//*[@id='dt-recent']//*[contains(text(),'Test Invite')]/../../following-sibling::*[4]" />
+	<xpath name="FILEINVITE_DASHBOARD_REMOVE_NEW_MESSAGE_LINK_T003" value="//*[@id='dt-recent']//*[contains(text(),'Test Invite')]/../../following-sibling::*[5]//*[contains(@class, 'remove')]" />
+	<xpath name="FILEINVITE_CONFIRM_CLEANUP_T003" value="//*[@class='modal-backdrop fade in']/..//button[contains(text(), 'Continue')]" />
+  </xpaths>
+  <tests>
+  	<test name="T001" value="T" />
+  	<test name="T002" value="T" />
+  	<test name="T003" value="T" />
+  	<test name="T003A" value="T" />
+  	<test name="T004" value="T" />
+  	<test name="T005" value="T" />
+  </tests>
+</configuration>
+
+
+
